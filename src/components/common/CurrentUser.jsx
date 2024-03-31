@@ -1,10 +1,12 @@
-const CurrentUser = ({user}) => {
+const CurrentUser = ({userPhotoUrl, userDisplayName}) => {
     return(
-        <>
-            <img src={user.photoURL} alt={user.displayName} width='50' height='50' />
-            {user.displayName}
-        </>
-    )
+        <div className="flex flex-row flex-wrap gap-3 ml-3 mt-3">
+            <img src={userPhotoUrl} alt={userDisplayName} width='30' height='30' />
+            {userDisplayName}
+        </div>
+
+            
+    )   
 }
   
   export default CurrentUser;
